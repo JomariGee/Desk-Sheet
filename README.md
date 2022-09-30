@@ -7,7 +7,7 @@ https://user-images.githubusercontent.com/20957439/193168070-846dad27-94e6-4361-
 ## Install
 ```
 ▶  Download the repository
-▶  Run requirements.txt
+▶  Install the requirements: pip install -r requirements.txt
 ▶  Ctrl+F for 'add', to give input for user-dependent variables
 ▶  Run it
 ```
