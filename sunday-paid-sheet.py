@@ -35,7 +35,7 @@ def microsoft_login():
     try: 
         time.sleep(1.9) 	
         username = "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[3]/div/div/div/div[2]/div[2]/div/input[1]"
-        driver.find_element(by=By.XPATH, value=username).send_keys("") #Adda
+        driver.find_element(by=By.XPATH, value=username).send_keys("") #Add
 
         #Hit the 'next' button
         next_button = WebDriverWait(driver, .9).until(
