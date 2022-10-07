@@ -9,7 +9,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
-import colorama, time,os
+import colorama, time, os
 from colorama import Fore, Back, Style
 
 #Necessary for colorama to work on Windows
