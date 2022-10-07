@@ -42,8 +42,7 @@ def microsoft_login():
 
         #Hit the 'next' button
         next_button = WebDriverWait(driver, .9).until(
-                EC.element_to_be_clickable((By.XPATH, "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[3]/div/div/div/div[4]/div/div/div/div"))
-            )
+                EC.element_to_be_clickable((By.XPATH, "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[3]/div/div/div/div[4]/div/div/div/div")))
         next_button.click()
         
         #Enter password
@@ -53,14 +52,12 @@ def microsoft_login():
        
         #Hit the 'sign-in' button to staying signed in
         sign_in_button = WebDriverWait(driver, .5).until(
-                EC.element_to_be_clickable((By.XPATH, "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[4]/div[2]/div/div/div/div"))
-            )
+                EC.element_to_be_clickable((By.XPATH, "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[4]/div[2]/div/div/div/div")))
         sign_in_button.click()
 
         #Hit the 'no' button to staying signed in
         no_button = WebDriverWait(driver, .9).until(
-                EC.element_to_be_clickable((By.XPATH, "/html/body/div/form/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]"))
-            )
+                EC.element_to_be_clickable((By.XPATH, "/html/body/div/form/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]")))
         no_button.click()
     
     #Rerun the program if an element isn't found (Bug that sometimes happens)
@@ -80,8 +77,7 @@ def extra_bread():
 
         #Hit the calendar button, then hit the current date highlighted
         calendar_button_for_current_day = WebDriverWait(driver, 1).until(
-                EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/div/div/div[1]/div/div[1]/div[2]/div[2]/div[2]/div/div[3]/div/div/button"))
-            )
+                EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/div/div/div[1]/div/div[1]/div[2]/div[2]/div[2]/div/div[3]/div/div/button")))
         calendar_button_for_current_day.click()
         current_day = "/html/body/div/div/div/div/div[1]/div/div[1]/div[2]/div[2]/div[2]/div/div[3]/div/div/div/div/div/div/div/table/tbody/tr[4]/td[3]/div"
         driver.find_element(by=By.XPATH, value=current_day).click()
