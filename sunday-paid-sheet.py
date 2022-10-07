@@ -30,7 +30,7 @@ driver.maximize_window()
 #Login into Microsoft
 def microsoft_login():
     try: 
-        time.sleep(1.5) 	
+        time.sleep(1.9) 	
         username = "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[3]/div/div/div/div[2]/div[2]/div/input[1]"
         driver.find_element(by=By.XPATH, value=username).send_keys("") #Adda
 
@@ -41,7 +41,7 @@ def microsoft_login():
         next_button.click()
         
         #Enter password
-        time.sleep(.8)
+        time.sleep(1)
         password = "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div/div[2]/input"
         driver.find_element(by=By.XPATH, value=password).send_keys("") #Add
        
