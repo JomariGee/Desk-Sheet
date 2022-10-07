@@ -11,7 +11,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 import colorama, time
 from colorama import Fore, Back, Style
+
+#Necessary for colorama to work on Windows
 colorama.init()
+os.system("cls" or "clear")
 
 #Declare Chrome options and install driver if need be
 chrome_options = webdriver.ChromeOptions()
